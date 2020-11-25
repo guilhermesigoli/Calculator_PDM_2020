@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Calculadora PDM 2020 2</string>
+    <string name="exit">Exit</string>
+    <string name="configurations">Configurations</string>
 </resources>

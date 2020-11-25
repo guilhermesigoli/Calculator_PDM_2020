@@ -1,7 +1,12 @@
 package com.ilogis.calculator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -52,5 +57,26 @@ public class MainActivity extends AppCompatActivity {
                 viewfinder.setText("");//R.string.zero;
                 break;
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.configurationMi:
+                Intent configIntent = new Intent(this, ConfigurationActivity.class);
+                startActivity(configIntent);
+            case R.id.exitMi:
+                finish();
+                return true;
+            default:
+                return false;
+        }
+
     }
 }
