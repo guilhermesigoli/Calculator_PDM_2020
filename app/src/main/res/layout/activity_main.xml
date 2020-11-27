@@ -26,7 +26,7 @@
             android:padding="20dp"
             android:layout_height="match_parent"
             android:onClick="setTextOnView"
-            android:layout_weight="1"
+            android:layout_weight="3"
             android:textSize="18dp"
             android:text="/" />
 
@@ -36,7 +36,7 @@
             android:padding="20dp"
             android:layout_height="match_parent"
             android:onClick="setTextOnView"
-            android:layout_weight="1"
+            android:layout_weight="3"
             android:textSize="18dp"
             android:text="X" />
 
@@ -47,8 +47,8 @@
             android:layout_height="match_parent"
             android:onClick="setTextOnView"
             android:layout_weight="1"
-            android:textSize="18dp"
-            android:text="<" />
+            android:drawableRight="@drawable/ic_back_space"
+            android:gravity="center_horizontal"/>
     </LinearLayout>
 
     <LinearLayout
@@ -172,7 +172,7 @@
             android:textSize="18dp"
             android:text="3" />
         <Button
-            android:id="@+id/decimal_bt"
+            android:id="@+id/dot_bt"
             android:layout_width="0dp"
             android:padding="20dp"
             android:layout_height="wrap_content"
